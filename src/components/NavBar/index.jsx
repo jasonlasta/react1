@@ -3,7 +3,7 @@ import React from "react";
 export const NavBar = () => {
     return (
         <h1>
-            Hola
+            Hola todo bien
         </h1>
     )
 }
