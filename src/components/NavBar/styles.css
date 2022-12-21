@@ -5,6 +5,15 @@
 
 .logo {
     font-weight: bold;
+    
 }
 
+.nav li {
+    margin-left: 3rem;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
 
