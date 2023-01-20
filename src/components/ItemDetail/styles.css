@@ -1,11 +1,7 @@
 .imagen {
-    width: 300px;
-    height: 200px;
-    
-}
+    width: 75%;
 
-.container {
-    
+     
 }
 
 .detallesProdu li {
@@ -16,4 +12,9 @@
 
 .cardDetail {
     max-width: 40%;
+    margin-top: 50px;
+}
+
+.finalizar {
+    
 }

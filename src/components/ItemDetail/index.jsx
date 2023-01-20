@@ -2,15 +2,19 @@ import React, {useState} from "react";
 import './styles.css';
 import ItemCount from "../ItemCount";
 import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext";
+
 
 
 
 export const ItemDetail = ({data}) => {
     const [goToCart, setGoToCart] = useState(false);
+    const {addProduct} = useCartContext();
 
 
     const onAdd = (quantity) => {
         setGoToCart(true);
+        addProduct(data, quantity);
     }
   return (
 
@@ -23,7 +27,7 @@ export const ItemDetail = ({data}) => {
     <ul className="detallesProdu">
                   <li>Marca: Stussy </li>
                   <li>Talle: M </li>
-                   <li>Precio: $ 00,00</li>
+                   <li>Precio: $ {data.precio}</li>
                     
     </ul>
     <p>Precio: {data.precio}</p>

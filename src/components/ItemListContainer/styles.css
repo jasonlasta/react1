@@ -1,6 +1,7 @@
 .itemTitulo {
  
- border-style: groove;
+ border-style: inset;
+ 
  text-decoration: none;
 
 }
